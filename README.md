@@ -8,8 +8,6 @@ This project implements and compares three fundamental algorithms:
 
 **Purpose:** To measure real execution times across different array sizes and input types, and to verify whether practical performance matches theoretical Big-O expectations.
 
----
-
 ## Algorithm Descriptions
 
 ### 1. Insertion Sort (Basic Sort)
@@ -56,8 +54,6 @@ Size       Input      Insertion Sort (ns)    Merge Sort (ns)
 1000       Sorted     4063                   196693
 5000       Sorted     7200                   839275
 ```
-
----
 
 ## Reflection
 
