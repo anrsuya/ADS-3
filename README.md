@@ -39,22 +39,6 @@ Merge Sort:     [115, 459, 2308, 3124, 3193, 4006, 4841, 5400, 6274, 8622]
 Binary Search target 4006 -> index 5
 ```
 
-### Program Output — Performance Table
-```
->>> SORTING EXPERIMENTS
-Size       Input      Insertion Sort (ns)    Merge Sort (ns)
-------------------------------------------------------------------
-10         Random     4359                   16379
-100        Random     188387                 24076
-1000       Random     4047809                241708
-5000       Random     7171209                1323671
-
-10         Sorted     4155                   1865
-100        Sorted     801                    10111
-1000       Sorted     4063                   196693
-5000       Sorted     7200                   839275
-```
-
 ## Reflection
 
 Working through this assignment revealed how dramatically theoretical complexity differences translate into real execution times. The gap between O(n²) and O(n log n) is invisible on tiny arrays — in fact, Insertion Sort beat Merge Sort at n=10 on random data due to Merge Sort's overhead from creating temporary arrays. But at n=1,000, the gap became undeniable, and by n=5,000 Merge Sort was over 5× faster. This was a concrete reminder that algorithm choice matters only at meaningful scale.
